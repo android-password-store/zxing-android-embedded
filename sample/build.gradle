@@ -4,7 +4,7 @@ android {
     compileSdkVersion project.androidTargetSdk
 
     defaultConfig {
-        minSdkVersion 24
+        minSdkVersion 23
         targetSdkVersion project.androidTargetSdk
         versionCode 410
         versionName "4.1.0"
