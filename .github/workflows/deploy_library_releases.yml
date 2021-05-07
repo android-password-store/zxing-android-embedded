@@ -18,7 +18,7 @@ jobs:
     - name: Upload binaries
       uses: burrunan/gradle-cache-action@03c71a8ba93d670980695505f48f49daf43704a6
       with:
-        arguments: :zxing-android-embedded:uploadArchives
+        arguments: :zxing-android-embedded:publishAllPublicationsToMavenCentralRepository
       env:
         ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.NEXUS_PUBLISH_USERNAME }}
         ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.NEXUS_PUBLISH_PASSWORD }}
