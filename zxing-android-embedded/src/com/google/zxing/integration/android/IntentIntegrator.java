@@ -16,7 +16,6 @@
 
 package com.google.zxing.integration.android;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
@@ -147,7 +146,6 @@ public class IntentIntegrator {
      *                 {@link #startActivityForResult(Intent, int)} will be called on the {@link Fragment} instead
      *                 of an {@link Activity}
      */
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public static IntentIntegrator forFragment(Fragment fragment) {
         IntentIntegrator integrator = new IntentIntegrator(fragment.getActivity());
         integrator.fragment = fragment;

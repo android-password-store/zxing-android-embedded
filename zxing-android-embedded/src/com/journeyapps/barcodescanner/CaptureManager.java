@@ -1,7 +1,6 @@
 package com.journeyapps.barcodescanner;
 
 import android.Manifest;
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -236,7 +235,6 @@ public class CaptureManager {
 
     private boolean askedPermission = false;
 
-    @TargetApi(23)
     private void openCameraWithPermission() {
         if (ContextCompat.checkSelfPermission(this.activity, Manifest.permission.CAMERA)
                 == PackageManager.PERMISSION_GRANTED) {
